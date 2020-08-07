@@ -1,0 +1,16 @@
+extend components/template.pug
+block contenidos
+	section.intro
+		div.intro__imagen
+			img(src="images/imagen.png", alt="", srcset="")
+		.intro__contenido
+			h2 #{titulos[1]}
+			p Lorem Ipsum
+			a.boton Leer más
+	//ul
+		each  titulo in titulos
+			li= titulo
+	main.contenido
+		+caja('imagen.png',titulos[1],'Lorem ipsum')
+		+caja('imagen.png',titulos[2],'Lorem ipsum')
+		+caja('imagen.png',titulos[3],'Lorem ipsum')

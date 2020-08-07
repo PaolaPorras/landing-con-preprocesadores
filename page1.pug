@@ -1,0 +1,13 @@
+extend components/template.pug
+block contenidos
+	section.wrapper
+		nav.menu
+			h2 #{titulos[4]}
+			ul
+				each enlace in enlaces
+					li=enlace	
+		section.main
+			h1 #{titulos[1]}
+			p Lorem ipsum
+			p Lorem ipsum
+			a.boton Leer más
